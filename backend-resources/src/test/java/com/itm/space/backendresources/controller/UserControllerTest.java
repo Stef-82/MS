@@ -34,7 +34,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @WithMockUser(username = "user1", password = "user", authorities = "ROLE_MODERATOR")
 class UserControllerTest extends BaseIntegrationTest {
-
     @MockBean
     private Keycloak keycloak;
     @Autowired
